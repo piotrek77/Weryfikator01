@@ -2,5 +2,6 @@
 <Project Sdk="Soneta.Sdk">
   <PropertyGroup>
     <TargetFramework>$(SonetaTargetFramework)</TargetFramework>
+    <Version>2204.4.8.1</Version>
   </PropertyGroup>
 </Project>
