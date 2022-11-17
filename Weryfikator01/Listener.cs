@@ -15,7 +15,7 @@ namespace Weryfikator01
         public void AfterLogin(Login login)
         {
 
-            Singleton singleton = Singleton.GetInstance();
+            Tools singleton = Tools.GetInstance();
 
             singleton.Loguj(this.GetType().Name);
             //Soneta.Kadry.KadryModule.PracHistoriaSchema.AddOnEditin

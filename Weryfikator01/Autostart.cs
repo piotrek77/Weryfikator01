@@ -13,7 +13,7 @@ namespace Weryfikator01
     {
         public void Initialize()
         {
-            Singleton singleton = Singleton.GetInstance();
+            Tools singleton = Tools.GetInstance();
 
             singleton.Loguj(this.GetType().Name);
 

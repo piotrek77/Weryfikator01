@@ -12,7 +12,7 @@ namespace Weryfikator01
         //konstruktor statyczny jest lepszy, gdyż jest wołany tylko raz
         static WyzwalaczeReczne()
         {
-            Singleton.GetInstance().Loguj("WyzwalaczeReczne - konstruktor statyczny");
+            Tools.GetInstance().Loguj("WyzwalaczeReczne - konstruktor statyczny");
         }
     }
 }

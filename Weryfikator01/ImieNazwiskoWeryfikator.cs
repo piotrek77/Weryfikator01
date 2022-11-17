@@ -15,17 +15,7 @@ namespace Weryfikator01
         public ImieNazwiskoWeryfikator(Pracownik pracownik) : base(pracownik)
         {
         }
-
-
-        //private new Pracownik Row
-        //{
-        //    get
-        //    {
-        //        return (Pracownik)base.Row;
-        //    }
-
-        //}
-
+ 
         public override string Description => "imie, nazwisko musi wyglądać jak imię, nazwisko :)";
 
         protected override bool IsValid()
@@ -36,7 +26,7 @@ namespace Weryfikator01
             {
                 return true;
             }
-            Singleton.GetInstance().Loguj(this.GetType().Name);
+            Tools.GetInstance().Loguj(this.GetType().Name);
             //weryfikator sprawdza czy imie i nazwisko są wpisane wg wzorca: pierwsza literaz wielka, pozostałe małe
             string wzor = "^\\p{Lu}\\p{Ll}*$";
             //https://stackoverflow.com/questions/2385701/regular-expression-for-first-and-last-name
