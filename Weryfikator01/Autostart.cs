@@ -18,9 +18,9 @@ namespace Weryfikator01
             singleton.Loguj(this.GetType().Name);
 
 
-            //WyzwalaczeReczne wyzwalaczeReczne = new WyzwalaczeReczne();
-            //WyzwalaczeReczne wyzwalaczeReczne2 = new WyzwalaczeReczne();
-            //WyzwalaczeReczne wyzwalaczeReczne3 = new WyzwalaczeReczne();
+
+            _ = new WyzwalaczeReczne();
+            
         }
     }
 }
