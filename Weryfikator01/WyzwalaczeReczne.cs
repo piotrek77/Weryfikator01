@@ -28,7 +28,10 @@ namespace Weryfikator01
 
 
             if (poz == null) { return; }
-
+            if(poz.Ilosc.Value == 13.0)
+            {
+                poz.Rabat = new Soneta.Types.Percent(0.5m);
+            }
             Tools.GetInstance().Loguj($"Ilosc={poz.Ilosc}");
         }
     }
